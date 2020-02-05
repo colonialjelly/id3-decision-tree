@@ -1,8 +1,8 @@
 # ID3 Decision Tree
 
-ID3 (Iterative Dichotomiser 3) is a decision tree learning algorithm. The algorithm works by recursively growing the tree top down. At each
-step we decide which attribute (feature) is the most suitable to split on by measuring how much information it provides. Information gain is calculated
-as:
+ID3 (Iterative Dichotomiser 3) is a decision tree learning algorithm. It works by recursively growing the tree top down. At each
+step it decides which attribute (feature) is the most suitable to split on by measuring how much information it provides. Information gain for an attribute A is calculated
+as the difference between the entropy of the data and the entropy of the data after taking the split A.
 
 
 ## Usage
