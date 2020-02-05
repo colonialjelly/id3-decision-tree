@@ -1,10 +1,13 @@
 # ID3 Decision Tree
 
-A python implementation of the ID3 decision tree learning algorithm. 
+ID3 (Iterative Dichotomiser 3) is a decision tree learning algorithm. The algorithm works by recursively growing the tree top down. At each
+step we decide which attribute (feature) is the most suitable to split on by measuring how much information it provides. Information gain is calculated
+as:
+
 
 ## Usage
 
-The data reader accepts either a csv file or a path to a csv file. It expects that the header is included. The label column should either be named "label" or a custom name can be
+The data reader accepts either a numpy array or a path to a csv file. It expects that the header is included. The label column should either be named "label" or a custom name can be
 provided during initialization of the Data class. 
 
 The classifier requires that the data be provided as a Data object. An optional max_depth parameter can be provided for pruning. 
