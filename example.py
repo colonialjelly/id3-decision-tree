@@ -1,7 +1,6 @@
-from ID3 import ID3Classifier
+from id3 import ID3Classifier
 from minipanda import Data
 import numpy as np
-
 
 if __name__ == '__main__':
     data_train = Data(fpath='data/house_train.csv')
