@@ -4,7 +4,6 @@ ID3 (Iterative Dichotomiser 3) is a decision tree learning algorithm. It works b
 step it decides which attribute (feature) is the most suitable to split on by measuring how much information it provides. Information gain for an attribute A is calculated
 as the difference between the entropy of the data and the entropy of the data after taking the split A.
 
-
 ## Usage
 
 The data reader accepts either a numpy array or a path to a csv file. It expects that the header is included. The label column should either be named "label" or a custom name can be
@@ -25,3 +24,11 @@ id3.fit(data_train)
 y_pred = id3.predict(data_test)
 print("Test Accuracy: ", np.mean(y_pred == data_test.label))
 ```
+
+## Requirements
+
+- `numpy>=1.17.2`
+
+## References
+
+- Original Paper by Ross Quinlan [Induction of Decision Trees](https://hunch.net/~coms-4771/quinlan.pdf)
